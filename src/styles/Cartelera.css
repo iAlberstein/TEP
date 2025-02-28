@@ -1,0 +1,110 @@
+/* Contenedor principal */
+.cartelera-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título centrado */
+.cartelera-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Barra de búsqueda: 60% de ancho, centrada */
+.search-bar {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-bar input {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-bar select {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search-bar input,
+.search-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.search-bar input,
+.search-select {
+  height: 42px; /* Alto fijo para consistencia */
+}
+
+/* Contenedor de tarjetas */
+.shows-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: calc(4 * 250px + 3 * 20px); /* Ajusta el ancho máximo */
+  margin: 0 auto;
+}
+
+/* Tarjeta del show */
+.show-card {
+  width: 250px; /* Ancho fijo para mantener diseño consistente */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Eliminamos overflow: hidden para evitar recortes */
+}
+
+/* Imagen del show */
+.show-image {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: auto; /* Altura automática para respetar proporciones */
+  display: block; /* Elimina espacios no deseados debajo */
+}
+
+/* Información del show centrada */
+.show-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.show-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.show-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.show-info button {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-info button:hover {
+  background-color: #0056b3;
+}

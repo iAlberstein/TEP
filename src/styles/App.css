@@ -1,0 +1,75 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Puedes cambiar la fuente si lo prefieres */
+  line-height: 1.6;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+html {
+  font-size: 16px; /* Base font-size */
+}
+
+body {
+  background-color: #f4f4f4; /* Color de fondo general */
+  color: #333; /* Color de texto general */
+}
+
+container {
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo de la página */
+  margin: 0 auto;
+  padding: 0 15px; /* Espaciado en los lados */
+}
+
+
+
+/* Asegura que el contenedor principal ocupe toda la altura de la ventana */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Al menos la altura de la pantalla */
+  }
+  
+  main {
+    flex: 1; /* Este espacio crecerá para ocupar el espacio restante */
+    padding-bottom: 160px; /* Añadir espacio inferior para evitar que el contenido se oculte detrás del footer */
+    background-color: rgb(226, 226, 226);
+  }
+  
+  footer {
+    margin-top: auto; /* Empuja el footer al fondo */
+  }
+  

@@ -1,0 +1,16 @@
+/* Navbar fijo en la parte superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #fff; /* Color de fondo del navbar */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra para el efecto de separación */
+  }
+  
+  /* Contenido principal debajo del Navbar */
+  main {
+    padding-top: 60px; /* Esto da espacio al contenido debajo del navbar fijo */
+  }

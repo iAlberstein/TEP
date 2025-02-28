@@ -1,0 +1,48 @@
+.banner {
+  position: relative;
+  width: 70%; /* Ancho máximo del contenedor */
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%; /* La imagen ocupa el ancho disponible del contenedor */
+  height: auto; /* La altura se ajusta automáticamente para mantener proporciones */
+  display: block; /* Elimina espacios no deseados debajo de la imagen */
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.banner-info h2 {
+  margin: 0;
+}
+
+.banner-info p {
+  margin: 5px 0;
+}
+
+/* Ajustes específicos para celulares */
+@media (max-width: 992px) {
+  .banner {
+    width: 90%; /* Más ancho relativo en móviles */
+  }
+
+  .banner-info {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    padding: 8px;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto; /* Mantiene proporciones también en móviles */
+  }
+}

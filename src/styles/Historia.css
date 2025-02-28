@@ -1,0 +1,73 @@
+.historia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Asegura que ambos elementos tengan la misma altura en pantallas grandes */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .historia-content {
+    flex: 2;
+    text-align: justify; /* Texto justificado */
+  }
+  
+  .historia-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .historia-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .historia-image-container {
+    flex: none; /* Evita que crezca o se encoja según flex */
+    width: 250px; /* Ancho fijo de 200px */
+    display: flex;
+    align-items: stretch; /* La imagen se estira para igualar la altura del contenido en pantallas grandes */
+  }
+  
+  .historia-image {
+    width: 100%; /* Ocupa el ancho fijo de 200px */
+    height: 100%; /* Ocupa el 100% de la altura del contenedor (igual al texto) en pantallas grandes */
+    object-fit: cover; /* Mantiene proporciones, recortando si es necesario en pantallas grandes */
+    display: block; /* Elimina espacios no deseados debajo */
+    border-radius: 10px;
+  }
+  
+  /* Pantallas pequeñas: imagen debajo del texto */
+  @media (max-width: 768px) {
+    .historia-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .historia-image-container {
+      display: block; /* Muestra la imagen en pantallas pequeñas */
+      width: 100%; /* Ocupa el ancho completo en móviles */
+      margin-top: 20px; /* Espacio entre texto e imagen */
+    }
+  
+    .historia-image {
+      width: 100%; /* Ancho completo en móviles */
+      height: auto; /* Altura automática para respetar proporciones originales */
+      object-fit: contain; /* Muestra la imagen completa sin recortes ni deformaciones */
+    }
+  
+    .historia-content {
+      flex: 1; /* Ocupa todo el espacio disponible */
+    }
+  
+    .historia-content h2 {
+      font-size: 24px;
+    }
+  
+    .historia-content p {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,82 @@
+.show-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.show-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.show-image {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: auto; /* Altura automática para respetar proporciones */
+  display: block; /* Elimina espacios no deseados debajo */
+  border-radius: 10px;
+}
+
+.show-info-container {
+  flex: 2;
+  text-align: center;
+}
+
+.show-info-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.show-extra-container {
+  flex: 1;
+  text-align: left;
+}
+
+.show-extra-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #0a6d48;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.buy-button:hover {
+  background-color: #14a06d;
+}
+
+@media (max-width: 768px) {
+  .show-detail-container {
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center; /* Centra los elementos en móviles */
+    text-align: center;
+  }
+
+  .show-image-container {
+    order: 1; /* Mantiene la imagen arriba */
+  }
+
+  .show-info-container {
+    order: 2; /* El texto va en el medio */
+  }
+
+  .show-extra-container {
+    order: 3; /* Los datos extra van al final */
+    text-align: center;
+  }
+
+  .show-image {
+    width: 100%; /* Mantiene el ancho completo en móviles */
+    height: auto; /* Respeta proporciones también en móviles */
+  }
+}
